@@ -52,7 +52,8 @@ class OAuthMeta(type):
             primary = 'https://getfavicon.appspot.com/%s' % cls.provider_url
             domain = urlparse.urlparse(cls.provider_url).netloc
             backup = 'https://www.google.com/s2/favicons?domain=%s' % domain
-            cls.favicon_url = '%s?defaulticon=%s' % (primary, urllib.quote(backup))
+            # cls.favicon_url = '%s?defaulticon=%s' % (primary, urllib.quote(backup))
+            cls.favicon_url = backup
 
         if 'name' not in attrs:
             cls.name = cls.__name__
