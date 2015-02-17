@@ -1,4 +1,5 @@
-SITENAME = 'foauth.org'
+SITENAMEx = 'foauth.org'
+SITENAME = 'mandev-foauth.herokuapp.com'
 AUTHOR = 'Marty Alchin'
 SITEURL = 'https://foauth.org/blog'
 TIMEZONE = 'America/Los_Angeles'
